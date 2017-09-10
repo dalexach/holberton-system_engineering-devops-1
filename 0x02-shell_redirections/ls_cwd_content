@@ -1,20 +1,5 @@
-total 52
-drwxrwxr-x 2 vagrant vagrant 4096 Sep 10 19:18 .
-drwxrwxr-x 7 vagrant vagrant 4096 Sep  9 08:06 ..
--rwxrw-r-- 1 vagrant vagrant   30 Sep  9 22:31 0-hello_world
--rwxrw-r-- 1 vagrant vagrant   28 Sep 10 18:32 1-confused_smiley
--rw-rw-r-- 1 vagrant vagrant   28 Sep 10 18:35 2-hellofile
--rwxrw-r-- 1 vagrant vagrant   39 Sep 10 18:41 3-twofiles
--rw-rw-r-- 1 vagrant vagrant   29 Sep 10 18:43 4-lastlines
--rwxrw-r-- 1 vagrant vagrant   29 Sep 10 18:46 5-firstlines
--rwxrw-r-- 1 vagrant vagrant   36 Sep 10 19:15 6-third_line
--rwxrw-r-- 1 vagrant vagrant   37 Sep 10 19:18 8-cwd_state
--rw-rw-r-- 1 vagrant vagrant    3 Sep  9 07:50 .gitignore
--rw-rw-r-- 1 vagrant vagrant   47 Sep 10 18:53 hello_test
--rw-rw-r-- 1 vagrant vagrant    0 Sep 10 19:18 ls_cwd_content
--rw-rw-r-- 1 vagrant vagrant   82 Sep  9 07:49 README.md
-total 64
-drwxrwxr-x 2 vagrant vagrant 4096 Sep 10 19:47 .
+total 68
+drwxrwxr-x 2 vagrant vagrant 4096 Sep 10 21:37 .
 drwxrwxr-x 7 vagrant vagrant 4096 Sep  9 08:06 ..
 -rwxrw-r-- 1 vagrant vagrant   30 Sep  9 22:31 0-hello_world
 -rwxrw-r-- 1 vagrant vagrant   28 Sep 10 18:32 1-confused_smiley
@@ -23,10 +8,12 @@ drwxrwxr-x 7 vagrant vagrant 4096 Sep  9 08:06 ..
 -rwxrw-r-- 1 vagrant vagrant   29 Sep 10 18:43 4-lastlines
 -rwxrw-r-- 1 vagrant vagrant   29 Sep 10 18:46 5-firstlines
 -rwxrw-r-- 1 vagrant vagrant   36 Sep 10 19:15 6-third_line
--rwxrw-r-- 1 vagrant vagrant   82 Sep 10 19:47 7-file
--rwxrw-r-- 1 vagrant vagrant   37 Sep 10 19:18 8-cwd_state
+-rwxrw-r-- 1 vagrant vagrant   88 Sep 10 21:32 7-file
+-rwxrw-r-- 1 vagrant vagrant   36 Sep 10 21:35 8-cwd_state
 -rw-rw-r-- 1 vagrant vagrant    3 Sep  9 07:50 .gitignore
--rw-rw-r-- 1 vagrant vagrant   43 Sep 10 19:38 \*\'Holberton
--rw-rw-r-- 1 vagrant vagrant   17 Sep 10 19:40 \*\'"Holberton School"\'\*$\?\*\*\*\*\*:)
--rw-rw-r-- 1 vagrant vagrant  824 Sep 10 19:18 ls_cwd_content
+-rw-rw-r-- 1 vagrant vagrant   44 Sep 10 21:18 \*\'Holberton
+-rw-rw-r-- 1 vagrant vagrant   17 Sep 10 21:20 \*\'"Holberton School"\'\*$\?\*\*\*\*\*:)
+-rw-rw-r-- 1 vagrant vagrant   17 Sep 10 21:30 \*\\'"Holberton School"\'\*$\?\*\*\*\*\*:)
+-rw-rw-r-- 1 vagrant vagrant   17 Sep 10 21:32 \*\\'"Holberton School"\'\\*$\?\*\*\*\*\*:)
+-rw-rw-r-- 1 vagrant vagrant    0 Sep 10 21:37 ls_cwd_content
 -rw-rw-r-- 1 vagrant vagrant   82 Sep  9 07:49 README.md
