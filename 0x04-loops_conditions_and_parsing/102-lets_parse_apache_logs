@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 # Parsing apache log file to get visitor id and https status code using awk
+
 awk '{print $1,$9}' apache-access.log
