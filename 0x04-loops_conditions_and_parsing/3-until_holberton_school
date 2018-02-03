@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Looping 10 times and printing a string using until
 i="0"
 until [ $i -gt 9 ]
 do

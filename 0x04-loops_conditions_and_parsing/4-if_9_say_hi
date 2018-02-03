@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Looping 10 times and printing a string with a different string printing on the 9th iteration
 i="0"
 while [ $i -lt 10 ]
 do

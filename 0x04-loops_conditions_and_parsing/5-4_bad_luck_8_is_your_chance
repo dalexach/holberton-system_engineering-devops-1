@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Looping 10 times and printing strings and adding if/elif/else
 i="0"
 while [ $i -lt 10 ]
 do
