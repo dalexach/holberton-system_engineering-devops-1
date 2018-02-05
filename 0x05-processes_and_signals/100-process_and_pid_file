@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# Create a file, display a message indefinitely, display a message when receiving
+# a SIGTERM signal, display a message when receiving a SIGINT signal,
+# delete the file and terminate itself when receiving a SIGQUIT or SIGTERM signal
+
+deletes ()
+{
+	rm /var/run/holbertonscript.pid
+	kill -SIGKILL $$
+}
+hate ()
+{
+	echo "I hate the kill command"
+	quit
+}
+trap 'echo "Y U no love me?!"' SIGINT
+trap 'deletes' SIGQUIT
+trap 'hate' SIGTERM
+echo $$ > /var/run/holbertonscript.pid
+while :
+do
+	echo "To infinity and beyond"
+done
