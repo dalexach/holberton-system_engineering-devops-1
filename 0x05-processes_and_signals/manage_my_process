@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Working with daemons and background processes
+
+while :
+do
+	echo "I am alive!" >> /tmp/my_process
+	sleep 2
+done
