@@ -29,9 +29,11 @@ int main(void)
 	for (i = 0; i < 5; i++)
 	{
 		pid = fork();
-		if (pid == 0)
+		if (pid < 0)
+			perror("fork error");
+		else if (pid == 0)
 			exit(0);
-		printf("Zombie process created, PID: %d\n", pid);
+		printf("Zombie process created, PID: %ld\n", (long) pid);
 	}
 	infinite_while();
 	return (0);
