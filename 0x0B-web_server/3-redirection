@@ -1,24 +1,6 @@
 #!/usr/bin/env bash
 #Setting up redirect
-apt-get update
 apt-get -y install nginx
-redirect="server {
-		listen 80 default_server;
-		listen [::]:80 default_server ipv6only=on;
-		root /usr/share/nginx/html;
-		index index.html index.htm;
-		# making site accessible from http://localhost/
-		sever_name localhost;
-		location / {
-			# attempting to server request as a file, then 
-			# as a directory, then falling back to displaying a 404.
-			try_files $uri $uri/ =404;
-			# Uncomment to enable naxsi on this location
-			# include /etc/nginx/naxsi.rules
-		}
-		loaction /redirect_me {
-			return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;
-		}
-}"
-echo "$redirect" > /etc/nginx/sites-available/default
+redirect="54.173.117.136;\n\tlocation \/redirect_me{\n\t\treturn 301 https:\/\/www.youtube.com\/watch?v=QH2-TGUlwu4;}"
+sed -i "s/localhost;/$redirect/" /etc/nginx/sites-available/default
 service nginx restart
