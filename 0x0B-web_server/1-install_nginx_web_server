@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Installing nginx on our webserver
-sudo apt-get -y install ngnix
+apt-get -y install nginx
 ip_string="54.173.117.136;\n"
 pattern="localhost;/s/localhost;"
 sed -i '0,/$pattern/$ip_string/' /etc/ngnix/sites-available/default
 echo "Holberton School makes learning fun." > /usr/share/nginx/html/index.html
-sudo service ngnix restart
+service ngnix restart
