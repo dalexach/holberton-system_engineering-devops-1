@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#Setting up redirect
+apt-get -y install nginx
+sed -i "0,/localhost;/s/localhost;/54.173.117.136;\n\tlocation = \/redirect_me {\n\t\treturn 301 https:\/\/www.youtube.com\/watch?v=QH2-TGUlwu4\n\t}\n/" /etc/nginx/sites-available/default
+service nginx restart
