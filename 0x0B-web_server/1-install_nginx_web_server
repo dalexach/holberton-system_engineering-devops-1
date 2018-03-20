@@ -5,4 +5,4 @@ ip_string="54.173.117.136;\n"
 pattern="localhost;/s/localhost;"
 sed -i '0,/$pattern/$ip_string/' /etc/ngnix/sites-available/default
 echo "Holberton School makes learning fun." > /usr/share/nginx/html/index.html
-service ngnix restart
+service nginx restart
