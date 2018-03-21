@@ -6,5 +6,5 @@ sed -i "30i \\\trewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu
 echo "Ceci n'est pas une page" > /usr/share/nginx/html/404.html
 error_replace="#error_page"
 error_string="error_page"
-sed -i "s/$error_replace/$error_string/" /etc/nginx/sites-available/default
+sed -i "s/$error_replace/$error_string/\n" /etc/nginx/sites-available/default
 service nginx restart
