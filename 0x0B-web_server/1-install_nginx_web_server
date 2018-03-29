@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Installing nginx on our webserver
+apt-get -y update
+apt-get -y install nginx
+echo "Holberton School makes learning fun." > /usr/share/nginx/html/index.html
+service nginx restart
