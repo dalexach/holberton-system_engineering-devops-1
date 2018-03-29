@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Configures a nginx server
+rm /etc/nginx/sites-enabled/default
+ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+# from StackOverflow answer:
+# https://stackoverflow.com/questions/16021481/nginx-not-listening-to-port-80#19084424
+sudo nginx restart
