@@ -1,3 +1,4 @@
+# Creating a file
 file{
   path => '/tmp/holberton',
   content => 'I love Puppet',
