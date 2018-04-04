@@ -1,12 +1,18 @@
 #!/usr/bin/env bash
 # Installing and configuring HAProxy on our load balancer
-sudo apt-get update
+sudo apt-get -y update
 sudo apt-get -y install software-properties-common
-sudo apt-add-repository -y ppa:vbernat/haproxy-1.7
-sudo apt-get update
-sudo apt-get -y install haproxy
-sudo apt-get -y install policycoreutils
-sudo setsebool -P haproxy_connect_any=1
-sudo sed -i '22 i\\nfrontend http-frontend\n\tbind \*:80\n\tmode http\n\default_backend www-backend' /etc/haproxy/haproxy.cfg
-sudo sed -i '27 i\\nbackend www-backend\n\tbalance roundrobin\n\tmode http\n\tserver 1-www 54.173.117.136:80 check\n\tserver 2-www 52.90.147.235:80 check' /etc/haproxy/haproxy.cfg
-sudo service haproxy restart 2>&1
+sudo apt-add-repository -y ppa:vbernat/haproxy-1.8
+sudo apt-get -y update
+sudo apt-get -y install haproxy=1.8\*
+sudo sed -i "$ a\listen 231-lb-01" /etc/haproxy/haproxy.cfg
+sudo sed -i "$ a\ \tbind 0.0.0.0:80" /etc/haproxy/haproxy.cfg
+sudo sed -i "$ a\ \tmode http" /etc/haproxy/haproxy.cfg
+sudo sed -i "$ a\ \tstats enable" /etc/haproxy/haproxy.cfg
+sudo sed -i "$ a\ \tstats uri /haproxy?stats" /etc/haproxy/haproxy.cfg
+sudo sed -i "$ a\ \tbalance roundrobin" /etc/haproxy/haproxy.cfg
+sudo sed -i "$ a\ \toption httpclose" /etc/haproxy/haproxy.cfg
+sudo sed -i "$ a\ \toption forwardfor" /etc/haproxy/haproxy.cfg
+sudo sed -i "$ a\ \tserver 231-web-01 54.173.117.136:80 check" /etc/haproxy/haproxy.cfg
+sudo sed -i "$ a\ \tserver 231-web-02 52.90.147.235:80 check" /etc/haproxy/haproxy.cfg
+sudo service haproxy start
