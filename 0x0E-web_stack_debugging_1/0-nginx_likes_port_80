@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
-# Configures a nginx server
-rm /etc/nginx/sites-enabled/default
-ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-# from StackOverflow answer:
-# https://stackoverflow.com/questions/16021481/nginx-not-listening-to-port-80#19084424
-sudo nginx restart
+# Replace 2 lines in the default file to make the server listen to port 80
+sudo sed -i "21c\ \tlisten 80 default_server;" /etc/nginx/sites-enabled/default
+sudo sed -i "22c\ \tlisten [::]:80 default_server ipv6only=on;" /etc/nginx/sites-enabled/default
+sudo service nginx reload
+sudo service nginx restart

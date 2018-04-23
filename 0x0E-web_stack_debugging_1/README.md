@@ -1,3 +1,18 @@
-# 0x0D-web_stack_debugging_1
+# 0x0E-web_stack_debugging_1
 
-This is the 15th project in the Systems Engineering and DevOps track. This project deals with debugging an nginx server.
+## Description
+
+Second web stack debugging project. Deals with fixing Nginx not listening on port 80.
+
+## Mandatory Tasks
+
+| Files | Description |
+| ----- | ----------- |
+| 0-nginx_likes_port_80 | Fixes an nginx server to listen on port 80. |
+| 1-debugging_made_short| Fixes an nginx server to listen on port 80 in 5 lines or less. |
+
+## Author
+
+[Jacob Biehler](https://www.linkedin.com/in/jacob-biehler-475573139/)
+[Twitter](https://twitter.com/Biehlerj)
+[GitHub](https://github.com/biehlerj)

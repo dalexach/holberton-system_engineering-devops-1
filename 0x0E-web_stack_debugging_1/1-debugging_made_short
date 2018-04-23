@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
-# Getting Apache to run on a container
-service apache2 restart
+# Changes listening port 8080 to 80 in an nginx server and removes nginx.pid
+sed -i 's/8080 default/80 default/' /etc/nginx/sites-enabled/default
+service nginx restart
+sed -i 's/.*/666/' /run/nginx.pid
