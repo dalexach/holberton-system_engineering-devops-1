@@ -1,3 +1,19 @@
 # 0x14-mysql
 
-This is the 21st project in the Systems Engineering and DevOps track. This project deals with setting up Primary/Replica databases with MySQL.
+## Description
+
+This projects deals with understanding and setting up Primary/Replica clusters with MySQL.
+
+## Mandatory Tasks
+
+| Files | Description |
+| ----- | ----------- |
+| 0-mysql_configuration_primary | Configuration file for the primary MySQL database |
+| 0-mysql_configuration_replica | Configuration file for the replica MySQL database |
+| 1-mysql_backup | Generates a MySQL dump and creates a compressed archive out of it |
+
+## Author
+
+[Jacob Biehler](https://www.linkedin.com/in/jacob-biehler-475573139/)
+[Twitter](https://twitter.com/Biehlerj)
+[GitHub](https://github.com/biehlerj)

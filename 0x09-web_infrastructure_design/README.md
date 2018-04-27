@@ -1,13 +1,19 @@
 # 0x09-web_infrastructure_design
 
-This is the 10th project in the Systems Engineering and DevOps track. This project deals with web infrastructure design
+## Description
 
-This project will contain images of whiteboarded web infrastructure designs from a simple infrastructure to a secured and monitored web infrastructure.
+This projects is a project about whiteboarding how the web is designed.
 
-## Goals
+## Mandatory Tasks
 
-1) Be able to draw a diagram covering the web stack we built in the sysadmin/DevOps track of the Holberton School curriculum.
-2) Be able to explain what each component does
-3) Be able to explain system redundancy
-4) Know the acronyms: LAMP, SPOF, QPS, etc.
-5) Be able to whiteboard web infrastructure in a interview setting
+| Files | Description |
+| ----- | ----------- |
+| 0-simple_web_stack | Photo of whiteboard design of a simple LAMP web stack |
+| 1-distributed_web_infrastructure | Photo of a whiteboard displaying a 3 server web infrastructure |
+| 2-secured_and_monitored_web_infrastructure | Photo of a whiteboard displaying a 3 server secured and monitored web infrastructure |
+
+## Author
+
+[Jacob Biehler](https://www.linkedin.com/in/jacob-biehler-475573139/)
+[Twitter](https://twitter.com/Biehlerj)
+[GitHub](https://github.com/biehlerj)
