@@ -88,3 +88,9 @@ git clone https://github.com/biehlerj/[Github project directory]
 1. [0x12-web_stack_debugging_2](./0x12-web_stack_debugging_2)
 1. [0x13-firewall](./0x13-firewall)
 1. [0x14-mysql](./0x14-mysql)
+
+## Author
+
+[Jacob Biehler](https://www.linkedin.com/in/jacob-biehler-475573139/)
+[Twitter](https://twitter.com/Biehlerj)
+[GitHub](https://github.com/biehlerj)
