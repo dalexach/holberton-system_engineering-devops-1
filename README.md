@@ -49,7 +49,7 @@ This repository contains projects on:
 * Flask
 * Puppet
 * ufw
-* xxx styling
+* Shellcheck styling
 * All programs were run on a Vagrant(ubuntu/trusty64) (Virtualbox) environment
 
 ## Installation
