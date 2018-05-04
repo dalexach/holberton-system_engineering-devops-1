@@ -12,10 +12,6 @@ This projects deals with getting data from an API and manipulating the type of d
 | 1-top_ten.py | Queries the Reddit API and prints the titles of the first 10 posts listed for a given subreddit |
 | 2-recurse.py | Queries the Reddit API recursively |
 
-## Advanced Task
-
-| 3-dictionary_of_list_of_dictionaries.py | Extends 0-gather_data_from_an_API.py and exports the data in JSON format |
-
 ## Author
 
 [Jacob Biehler](https://www.linkedin.com/in/jacob-biehler-475573139/)
