@@ -19,7 +19,12 @@ def recurse(subreddit, hot_list=[], after=None):
     response = response.json()
     after = response.get("data").get("after")
     hot_posts = response.get("data").get("children")
-    hot_list.extend(map(lambda p: p.get("data").get("title"), hot_posts))
-    if after is None:
+    if len(hot_posts) <= 0:
+        return None
+    else:
+        for post in hot_posts:
+            hot_list.append(post.get("data").get("title"))
+    if after:
+        return recurse(subreddit, hot_list, after)
+    else:
         return hot_list
-    return recurse(subreddit, hot_list, after)
