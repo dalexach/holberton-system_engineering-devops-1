@@ -9,7 +9,7 @@ def recurse(subreddit, hot_list=[], after=None):
     if type(subreddit) is not str:
         return None
     sub = subreddit
-    api_url = "https://www.reddit.com/r/{}/hot.json?limit=100".format(sub)
+    api_url = "https://api.reddit.com/r/{}/hot.json?limit=100".format(sub)
     if after is None:
         api_url += "&after={}".format(after)
     headers = {'user-agent': 'safari:holberton/0.1.0'}
@@ -19,12 +19,7 @@ def recurse(subreddit, hot_list=[], after=None):
     response = response.json()
     after = response.get("data").get("after")
     hot_posts = response.get("data").get("children")
-    if len(hot_posts) <= 0:
-        return None
-    else:
-        for post in hot_posts:
-            hot_list.append(post.get("data").get("title"))
-    if after:
-        return recurse(subreddit, hot_list, after)
-    else:
+    hot_list.extend(map(lambda p: p.get("data").get("title"), hot_posts))
+    if after is None:
         return hot_list
+    return recurse(subreddit, hot_list, after)
